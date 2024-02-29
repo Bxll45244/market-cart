@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shopping Cart Example</title>
+</head>
+<body>
+    <div id="products">
+        <div class="product">
+            <h3>125th Anniversary 1894 Official Spalding Basketball</h3>
+            <img src="/image/1.jpg" alt="Product 1 Image">
+            <button class="add-to-cart" data-product-id="1" data-price="236.86">Add to Cart</button>
+        </div>
+        <div class="product">
+            <h3>Spalding NBA Official Game Ball</h3>
+            <img src="/image/2.jpg" alt="Product 2 Image">
+            <button class="add-to-cart" data-product-id="2" data-price="192.28">Add to Cart</button>
+        </div>
+        <div class="product">
+            <h3>Spalding TF-33 (FIBA 23)</h3>
+            <img src="/image/3.jpg" alt="Product 3 Image">
+            <button class="add-to-cart" data-product-id="3" data-price="41.52">Add to Cart</button>
+        </div>
+        <div class="product">
+            <h3>Spalding TF-500</h3>
+            <img src="/image/4.jpg" alt="Product 4 Image">
+            <button class="add-to-cart" data-product-id="4" data-price="38.73">Add to Cart</button>
+        </div>
+        <div class="product">
+            <h3>3LB Rubber Trainer #7,#3</h3>
+            <img src="/image/5.jpg" alt="Product 5 Image">
+            <button class="add-to-cart" data-product-id="5" data-price="192.28">Add to Cart</button>
+        </div>
+        <div class="product">
+            <h3>PUMA Basketball Top Ball</h3>
+            <img src="/image/6.jpg" alt="Product 6 Image">
+            <button class="add-to-cart" data-product-id="6" data-price="192.28">Add to Cart</button>
+        </div>
+        <div class="product">
+            <h3>GRAFFITI RUBBER OUTDOOR BASKETBALL</h3>
+            <img src="/image/7.jpg" alt="Product 7 Image">
+            <button class="add-to-cart" data-product-id="7" data-price="192.28">Add to Cart</button>
+        </div>
+        <div class="product">
+            <h3>TREND STARS STRIPES RUBBER OUTDOOR BASKETBALL</h3>
+            <img src="/image/8.jpg" alt="Product 8 Image">
+            <button class="add-to-cart" data-product-id="8" data-price="192.28">Add to Cart</button>
+        </div>
+        <div class="product">
+            <h3>Wisdom Leaves Rubber Basketball 29.5"</h3>
+            <img src="/image/9.jpg" alt="Product 9 Image">
+            <button class="add-to-cart" data-product-id="9" data-price="192.28">Add to Cart</button>
+        </div>
+        <div class="product">
+            <h3>TF-Grind</h3>
+            <img src="/image/10.jpg" alt="Product 10 Image">
+            <button class="add-to-cart" data-product-id="10" data-price="192.28">Add to Cart</button>
+        </div>
+
+        
+    </div>
+
+    <h2>Cart</h2>
+    <div id="cart">
+        <p>No items in cart.</p>
+    </div>
+
+    <script src="cart.js"></script>
+    <script>
+        // เพิ่มโค้ด JavaScript ที่ได้รับจากคำแนะนำข้างต้นที่นี่
+    </script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        #products {
+            display: flex;
+            flex-wrap: wrap; /* เพิ่ม flex-wrap เพื่อให้เป็น multi-line */
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .product {
+            text-align: center;
+            width: 30%; /* ปรับขนาดให้เล็กลงเพื่อให้เข้าหน้าจอมากขึ้น */
+            border: 1px solid #ccc;
+            padding: 10px; /* ลด padding ให้มีพื้นที่น้อยลง */
+            margin-bottom: 20px; /* เพิ่ม margin-bottom เพื่อเว้นระยะห่างระหว่างสินค้า */
+        }
+
+        .product h3 {
+            margin: 0;
+            font-size: 16px; /* ลดขนาดตัวอักษรของชื่อสินค้า */
+            color: #333;
+        }
+
+        .product img {
+            width: 100%; /* ปรับขนาดของรูปภาพให้เต็มขนาดของพื้นที่ */
+            height: auto;
+            margin-bottom: 5px; /* ลด margin-bottom ของรูปภาพ */
+        }
+
+        .product button {
+            background-color: #323732;
+            color: white;
+            border: none;
+            padding: 5px 10px; /* ปรับขนาดของปุ่มให้เล็กลง */
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px; /* ปรับขนาดตัวอักษรของปุ่ม */
+            margin-top: 5px; /* ปรับ margin-top ของปุ่ม */
+            cursor: pointer;
+        }
+
+        .product button:hover {
+            background-color: #45a049;
+        }
+
+        #cart {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        #cart p {
+            margin-bottom: 5px;
+        }
+
+        #cart p:last-child {
+            font-weight: bold;
+        }
+        .product img {
+        width: 80%; 
+        height: auto;
+        margin-bottom: 10px;
+}
+
+    </style>
+</body>
+</html>
